@@ -1,0 +1,42 @@
+version: "2"
+services:
+  plex:
+    build:
+      context: .
+      dockerfile: Dockerfile-plex
+    ports:
+      - "80:80"
+      - "443:443"
+      - "32400:32400"
+      - "32400:32400/udp"
+      - "32469:32469"
+      - "32469:32469/udp"
+      - "1900:1900/udp"
+    volumes:
+      - /media/:/media/
+
+  sabnzb:
+      build:
+        context: .
+        dockerfile: Dockerfile-sabnzb
+      ports:
+        - "8080:8080"
+      volumes:
+        - /media/:/media/
+        - /home/michael/Downloads/:/downloads
+  sonarr:
+      build:
+        context: .
+        dockerfile: Dockerfile-sabnzb
+      ports:
+        - "8989:8989"
+      volumes:
+        - /etc/localtime/:/etc/localtime/:ro
+        - ./config/sonarr/:/config/:rw
+        - /dev/rtc:/dev/rtc:ro
+        - /media/michael/:/tv/:rw
+      environment:
+        - PGID=1000
+        - PUID=1000
+      depends_on:
+        - sabnzb
