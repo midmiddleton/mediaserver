@@ -913,3 +913,54 @@ OSError: [Errno 1] Operation not permitted: '/config/sabnzbd.ini.bak'
 2017-07-16 21:24:01,338::INFO::[dirscanner:316] Dirscanner starting up
 2017-07-16 21:24:01,348::INFO::[panic:242] Launching browser with http://127.0.0.1:8080/sabnzbd
 2017-07-16 21:24:01,348::INFO::[urlgrabber:72] URLGrabber starting up
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1158] --------------------------------
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1159] sabnzbdplus-2.1.0 (rev=443efb5eda00e165e7d0459824989a6300ec458c)
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1160] Full executable path = /usr/bin/sabnzbdplus
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1172] Platform = posix
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1173] Python-version = 2.7.12 (default, Nov 19 2016, 06:48:10) 
+[GCC 5.4.0 20160609]
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1174] Arguments = /usr/bin/sabnzbdplus --config-file /config --server 0.0.0.0:8080
+2017-07-18 12:41:47,682::INFO::[sabnzbdplus:1179] Preferred encoding = UTF-8
+2017-07-18 12:41:47,683::INFO::[sabnzbdplus:1220] Read INI file /config/sabnzbd.ini
+2017-07-18 12:41:47,683::INFO::[misc:497] download_dir directory: /config/Downloads/incomplete does not exist, try to create it
+2017-07-18 12:41:47,684::INFO::[__init__:989] Loading data for rss_data.sab from /config/admin/rss_data.sab
+2017-07-18 12:41:47,684::INFO::[__init__:989] Loading data for totals10.sab from /config/admin/totals10.sab
+2017-07-18 12:41:47,684::INFO::[postproc:95] Loading postproc queue
+2017-07-18 12:41:47,684::INFO::[__init__:989] Loading data for postproc2.sab from /config/admin/postproc2.sab
+2017-07-18 12:41:47,684::INFO::[__init__:989] Loading data for queue10.sab from /config/admin/queue10.sab
+2017-07-18 12:41:47,685::INFO::[__init__:989] Loading data for watched_data2.sab from /config/admin/watched_data2.sab
+2017-07-18 12:41:47,685::INFO::[__init__:989] Loading data for Rating.sab from /config/admin/Rating.sab
+2017-07-18 12:41:47,685::INFO::[__init__:992] /config/admin/Rating.sab missing
+2017-07-18 12:41:47,685::INFO::[scheduler:187] Setting schedule for midnight BPS reset
+2017-07-18 12:41:47,693::INFO::[__init__:345] All processes started
+2017-07-18 12:41:47,694::INFO::[sabnzbdplus:284] Web dir is /usr/share/sabnzbdplus/interfaces/Glitter
+2017-07-18 12:41:47,694::INFO::[sabnzbdplus:284] Web dir is /usr/share/sabnzbdplus/interfaces/Config
+2017-07-18 12:41:47,719::INFO::[sabnzbdplus:395] SABYenc module (v3.0.2)... found!
+2017-07-18 12:41:47,719::INFO::[sabnzbdplus:412] Cryptography module (v1.2.3)... found!
+2017-07-18 12:41:47,720::INFO::[sabnzbdplus:417] par2 binary... found (/usr/bin/par2)
+2017-07-18 12:41:47,720::INFO::[sabnzbdplus:422] par2cmdline binary... found (/usr/bin/par2)
+2017-07-18 12:41:47,720::INFO::[sabnzbdplus:428] UNRAR binary... found (/usr/bin/unrar)
+2017-07-18 12:41:47,720::INFO::[sabnzbdplus:441] unzip binary... found (/usr/bin/unzip)
+2017-07-18 12:41:47,720::INFO::[sabnzbdplus:446] 7za binary... found (/usr/bin/7za)
+2017-07-18 12:41:47,721::INFO::[sabnzbdplus:452] nice binary... found (/usr/bin/nice)
+2017-07-18 12:41:47,721::INFO::[sabnzbdplus:456] ionice binary... found (/usr/bin/ionice)
+2017-07-18 12:41:47,721::INFO::[sabnzbdplus:1265] SSL version OpenSSL 1.0.2g  1 Mar 2016
+2017-07-18 12:41:47,721::INFO::[sabnzbdplus:1266] SSL supported protocols ['TLS v1.2', 'TLS v1.1', 'TLS v1']
+2017-07-18 12:41:47,722::INFO::[sabnzbdplus:1377] Starting web-interface on 0.0.0.0:8080
+2017-07-18 12:41:47,723::INFO::[_cplogging:219] [18/Jul/2017:12:41:47] ENGINE Bus STARTING
+2017-07-18 12:41:47,725::INFO::[_cplogging:219] [18/Jul/2017:12:41:47] ENGINE Started monitor thread '_TimeoutMonitor'.
+2017-07-18 12:41:47,860::INFO::[_cplogging:219] [18/Jul/2017:12:41:47] ENGINE Serving on http://0.0.0.0:8080
+2017-07-18 12:41:47,860::INFO::[_cplogging:219] [18/Jul/2017:12:41:47] ENGINE Bus STARTED
+2017-07-18 12:41:47,861::INFO::[sabnzbdplus:1415] Starting sabnzbdplus-2.1.0
+2017-07-18 12:41:47,867::INFO::[dirscanner:316] Dirscanner starting up
+2017-07-18 12:41:47,868::INFO::[urlgrabber:72] URLGrabber starting up
+2017-07-18 12:41:47,868::INFO::[panic:242] Launching browser with http://127.0.0.1:8080/sabnzbd
+2017-07-18 12:41:47,881::INFO::[postproc:176] Completed Download Folder /config/Downloads/complete is not on FAT
+2017-07-18 12:53:33,484::WARNING::[__init__:184] Signal 15 caught, saving and exiting...
+2017-07-18 12:53:33,485::INFO::[nzbqueue:254] Saving queue
+2017-07-18 12:53:33,485::INFO::[__init__:965] Saving data for queue10.sab in /config/admin/queue10.sab
+2017-07-18 12:53:33,485::INFO::[__init__:965] Saving data for totals10.sab in /config/admin/totals10.sab
+2017-07-18 12:53:33,486::INFO::[__init__:965] Saving data for rss_data.sab in /config/admin/rss_data.sab
+2017-07-18 12:53:33,486::INFO::[__init__:965] Saving data for watched_data2.sab in /config/admin/watched_data2.sab
+2017-07-18 12:53:33,486::INFO::[postproc:89] Saving postproc queue
+2017-07-18 12:53:33,486::INFO::[__init__:965] Saving data for postproc2.sab in /config/admin/postproc2.sab

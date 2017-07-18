@@ -1,9 +1,7 @@
 version: "2"
 services:
   plex:
-    build:
-      context: .
-      dockerfile: Dockerfile-plex
+    image: linuxserver/plex:latest
     ports:
       - "80:80"
       - "443:443"
@@ -16,18 +14,14 @@ services:
       - /media/:/media/
 
   sabnzb:
-      build:
-        context: .
-        dockerfile: Dockerfile-sabnzb
+      image: linuxserver/sabnzbd:latest
       ports:
         - "8080:8080"
       volumes:
         - /media/:/media/
         - /home/michael/Downloads/:/downloads
   sonarr:
-      build:
-        context: .
-        dockerfile: Dockerfile-sabnzb
+      image: linuxserver/sonarr:latest
       ports:
         - "8989:8989"
       volumes:
