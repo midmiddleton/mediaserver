@@ -19,7 +19,6 @@ services:
         - "8080:8080"
       volumes:
         - /media/:/media/
-        - /home/michael/Downloads/:/downloads
   sonarr:
       image: linuxserver/sonarr:latest
       ports:
@@ -28,7 +27,7 @@ services:
         - /etc/localtime/:/etc/localtime/:ro
         - ./config/sonarr/:/config/:rw
         - /dev/rtc:/dev/rtc:ro
-        - /media/michael/:/tv/:rw
+        - /media/:/media/
       environment:
         - PGID=1000
         - PUID=1000

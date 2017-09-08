@@ -1,6 +1,6 @@
 run: build
 	docker-compose -f docker-compose.yml up -d
-build: purge
+build:
 	docker-compose -f docker-compose.yml build
 	docker-compose -f docker-compose.yml create
 
