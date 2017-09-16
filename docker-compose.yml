@@ -33,3 +33,13 @@ services:
         - PUID=1000
       depends_on:
         - sabnzb
+
+  couchpotato:
+      image: linuxserver/couchpotato:latest
+      ports:
+        - "5050:5050"
+      volumes:
+        - /media/:/media/
+      environment:
+        - PGID=1000
+        - PUID=1000
