@@ -11,14 +11,14 @@ services:
       - "32469:32469/udp"
       - "1900:1900/udp"
     volumes:
-      - /media/:/media/
+      - /mnt/:/mnt/
 
   sabnzb:
       image: linuxserver/sabnzbd:latest
       ports:
         - "8080:8080"
       volumes:
-        - /media/:/media/
+        - /mnt/:/mnt/
   sonarr:
       image: linuxserver/sonarr:latest
       ports:
@@ -27,7 +27,7 @@ services:
         - /etc/localtime/:/etc/localtime/:ro
         - ./config/sonarr/:/config/:rw
         - /dev/rtc:/dev/rtc:ro
-        - /media/:/media/
+        - /mnt/:/mnt/
       environment:
         - PGID=1000
         - PUID=1000
@@ -39,7 +39,35 @@ services:
       ports:
         - "5050:5050"
       volumes:
-        - /media/:/media/
+        - /mnt/:/mnt/
+      environment:
+        - PGID=1000
+        - PUID=1000
+  headphones:
+      image: linuxserver/headphones:latest
+      ports:
+        - "8181:8181"
+      volumes:
+        - /mnt/:/mnt/
+      environment:
+        - PGID=1000
+        - PUID=1000
+  ombi:
+      image: linuxserver/ombi:latest
+      ports:
+        - "3579:3579"
+      volumes:
+        - /mnt/:/mnt/
+      environment:
+        - PGID=1000
+        - PUID=1000
+
+  nzbget:
+      image: linuxserver/nzbget:latest
+      ports:
+        - "6789:6789"
+      volumes:
+        - /mnt/:/mnt/  
       environment:
         - PGID=1000
         - PUID=1000
