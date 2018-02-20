@@ -19,6 +19,17 @@ services:
         - "8080:8080"
       volumes:
         - /mnt/:/mnt/
+
+  nzbget:
+    image: linuxserver/nzbget:latest
+    ports:
+      - "6789:6789"
+    volumes:
+      - /mnt/:/mnt/
+    environment:
+      - PGID=1000
+      - PUID=1000
+
   sonarr:
       image: linuxserver/sonarr:latest
       ports:
@@ -31,18 +42,8 @@ services:
       environment:
         - PGID=1000
         - PUID=1000
-      depends_on:
-        - sabnzb
 
-  couchpotato:
-      image: linuxserver/couchpotato:latest
-      ports:
-        - "5050:5050"
-      volumes:
-        - /mnt/:/mnt/
-      environment:
-        - PGID=1000
-        - PUID=1000
+
   headphones:
       image: linuxserver/headphones:latest
       ports:
@@ -58,16 +59,6 @@ services:
         - "3579:3579"
       volumes:
         - /mnt/:/mnt/
-      environment:
-        - PGID=1000
-        - PUID=1000
-
-  nzbget:
-      image: linuxserver/nzbget:latest
-      ports:
-        - "6789:6789"
-      volumes:
-        - /mnt/:/mnt/  
       environment:
         - PGID=1000
         - PUID=1000
